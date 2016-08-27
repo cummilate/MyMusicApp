@@ -1,0 +1,337 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04EE15311D6A9F2100BB0B66 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EE15301D6A9F2100BB0B66 /* main.m */; };
+		04EE15341D6A9F2100BB0B66 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EE15331D6A9F2100BB0B66 /* AppDelegate.m */; };
+		04EE153A1D6A9F2100BB0B66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04EE15381D6A9F2100BB0B66 /* Main.storyboard */; };
+		04EE153C1D6A9F2100BB0B66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04EE153B1D6A9F2100BB0B66 /* Assets.xcassets */; };
+		04EE153F1D6A9F2100BB0B66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04EE153D1D6A9F2100BB0B66 /* LaunchScreen.storyboard */; };
+		04EE15481D6A9F6100BB0B66 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EE15471D6A9F6100BB0B66 /* CollectionViewController.m */; };
+		04EE15531D6AA25E00BB0B66 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EE15521D6AA25E00BB0B66 /* DetailViewController.m */; };
+		E283E4401D6C480A00C7B547 /* MediaAccessibility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E283E43F1D6C480A00C7B547 /* MediaAccessibility.framework */; };
+		E283E4421D6C48A100C7B547 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E283E4411D6C48A100C7B547 /* MediaPlayer.framework */; };
+		E2F19FFD1D6F7DCA00117E8E /* Simple Background Nexus 5 Wallpapers HD 133.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E2F19FFC1D6F7DCA00117E8E /* Simple Background Nexus 5 Wallpapers HD 133.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		04EE152C1D6A9F2100BB0B66 /* MyMusicApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyMusicApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04EE15301D6A9F2100BB0B66 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		04EE15321D6A9F2100BB0B66 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		04EE15331D6A9F2100BB0B66 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		04EE15391D6A9F2100BB0B66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		04EE153B1D6A9F2100BB0B66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04EE153E1D6A9F2100BB0B66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		04EE15401D6A9F2100BB0B66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04EE15461D6A9F6100BB0B66 /* CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
+		04EE15471D6A9F6100BB0B66 /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
+		04EE15511D6AA25E00BB0B66 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		04EE15521D6AA25E00BB0B66 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		E283E43F1D6C480A00C7B547 /* MediaAccessibility.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaAccessibility.framework; path = System/Library/Frameworks/MediaAccessibility.framework; sourceTree = SDKROOT; };
+		E283E4411D6C48A100C7B547 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		E2F19FFC1D6F7DCA00117E8E /* Simple Background Nexus 5 Wallpapers HD 133.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Simple Background Nexus 5 Wallpapers HD 133.jpg"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04EE15291D6A9F2100BB0B66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E283E4421D6C48A100C7B547 /* MediaPlayer.framework in Frameworks */,
+				E283E4401D6C480A00C7B547 /* MediaAccessibility.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04EE15231D6A9F2100BB0B66 = {
+			isa = PBXGroup;
+			children = (
+				E283E4411D6C48A100C7B547 /* MediaPlayer.framework */,
+				E283E43F1D6C480A00C7B547 /* MediaAccessibility.framework */,
+				04EE152E1D6A9F2100BB0B66 /* MyMusicApp */,
+				04EE152D1D6A9F2100BB0B66 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		04EE152D1D6A9F2100BB0B66 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04EE152C1D6A9F2100BB0B66 /* MyMusicApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04EE152E1D6A9F2100BB0B66 /* MyMusicApp */ = {
+			isa = PBXGroup;
+			children = (
+				04EE15321D6A9F2100BB0B66 /* AppDelegate.h */,
+				04EE15331D6A9F2100BB0B66 /* AppDelegate.m */,
+				04EE15461D6A9F6100BB0B66 /* CollectionViewController.h */,
+				04EE15471D6A9F6100BB0B66 /* CollectionViewController.m */,
+				04EE15511D6AA25E00BB0B66 /* DetailViewController.h */,
+				04EE15521D6AA25E00BB0B66 /* DetailViewController.m */,
+				04EE15381D6A9F2100BB0B66 /* Main.storyboard */,
+				04EE153B1D6A9F2100BB0B66 /* Assets.xcassets */,
+				04EE153D1D6A9F2100BB0B66 /* LaunchScreen.storyboard */,
+				E2F19FFC1D6F7DCA00117E8E /* Simple Background Nexus 5 Wallpapers HD 133.jpg */,
+				04EE15401D6A9F2100BB0B66 /* Info.plist */,
+				04EE152F1D6A9F2100BB0B66 /* Supporting Files */,
+			);
+			path = MyMusicApp;
+			sourceTree = "<group>";
+		};
+		04EE152F1D6A9F2100BB0B66 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				04EE15301D6A9F2100BB0B66 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04EE152B1D6A9F2100BB0B66 /* MyMusicApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04EE15431D6A9F2100BB0B66 /* Build configuration list for PBXNativeTarget "MyMusicApp" */;
+			buildPhases = (
+				04EE15281D6A9F2100BB0B66 /* Sources */,
+				04EE15291D6A9F2100BB0B66 /* Frameworks */,
+				04EE152A1D6A9F2100BB0B66 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyMusicApp;
+			productName = UICollectionView;
+			productReference = 04EE152C1D6A9F2100BB0B66 /* MyMusicApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04EE15241D6A9F2100BB0B66 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = PeersTech;
+				TargetAttributes = {
+					04EE152B1D6A9F2100BB0B66 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = FSEJ332H2M;
+					};
+				};
+			};
+			buildConfigurationList = 04EE15271D6A9F2100BB0B66 /* Build configuration list for PBXProject "MyMusicApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04EE15231D6A9F2100BB0B66;
+			productRefGroup = 04EE152D1D6A9F2100BB0B66 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04EE152B1D6A9F2100BB0B66 /* MyMusicApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04EE152A1D6A9F2100BB0B66 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04EE153F1D6A9F2100BB0B66 /* LaunchScreen.storyboard in Resources */,
+				E2F19FFD1D6F7DCA00117E8E /* Simple Background Nexus 5 Wallpapers HD 133.jpg in Resources */,
+				04EE153C1D6A9F2100BB0B66 /* Assets.xcassets in Resources */,
+				04EE153A1D6A9F2100BB0B66 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04EE15281D6A9F2100BB0B66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04EE15341D6A9F2100BB0B66 /* AppDelegate.m in Sources */,
+				04EE15311D6A9F2100BB0B66 /* main.m in Sources */,
+				04EE15481D6A9F6100BB0B66 /* CollectionViewController.m in Sources */,
+				04EE15531D6AA25E00BB0B66 /* DetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		04EE15381D6A9F2100BB0B66 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04EE15391D6A9F2100BB0B66 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		04EE153D1D6A9F2100BB0B66 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04EE153E1D6A9F2100BB0B66 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		04EE15411D6A9F2100BB0B66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		04EE15421D6A9F2100BB0B66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04EE15441D6A9F2100BB0B66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = UICollectionView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.PeersTech.UICollectionView;
+				PRODUCT_NAME = MyMusicApp;
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		04EE15451D6A9F2100BB0B66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = UICollectionView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.PeersTech.UICollectionView;
+				PRODUCT_NAME = MyMusicApp;
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04EE15271D6A9F2100BB0B66 /* Build configuration list for PBXProject "MyMusicApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04EE15411D6A9F2100BB0B66 /* Debug */,
+				04EE15421D6A9F2100BB0B66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04EE15431D6A9F2100BB0B66 /* Build configuration list for PBXNativeTarget "MyMusicApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04EE15441D6A9F2100BB0B66 /* Debug */,
+				04EE15451D6A9F2100BB0B66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04EE15241D6A9F2100BB0B66 /* Project object */;
+}

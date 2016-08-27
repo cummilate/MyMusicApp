@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="9CF-Sd-ckX">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--My Music App-->
+        <scene sceneID="eP6-k3-gYP">
+            <objects>
+                <collectionViewController id="gGr-c2-T0I" customClass="CollectionViewController" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="Rhd-Se-7Gy">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" name="controlHighlightColor" catalog="System" colorSpace="catalog"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="0Qt-SF-KJ5">
+                            <size key="itemSize" width="315" height="102"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="hlq-bQ-T4x">
+                                <rect key="frame" x="3" y="64" width="315" height="102"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="315" height="102"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" tag="100" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e3h-g2-C6m">
+                                            <rect key="frame" x="8" y="8" width="71" height="78"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="hello" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FL5-e6-yl0">
+                                            <rect key="frame" x="83" y="-189" width="213" height="480"/>
+                                            <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="13"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <color key="backgroundColor" red="1" green="0.50196081399917603" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <segue destination="43U-dD-9UU" kind="show" identifier="showDetail" id="b0D-g7-t2p"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="gGr-c2-T0I" id="0Ia-CU-fX5"/>
+                            <outlet property="delegate" destination="gGr-c2-T0I" id="ewn-KJ-YLA"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" title="My Music App" id="c24-wP-tq5"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="09R-Rj-ysp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1314" y="113"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="kRO-bM-oFa">
+            <objects>
+                <viewController id="43U-dD-9UU" customClass="DetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4uH-XJ-tjp"/>
+                        <viewControllerLayoutGuide type="bottom" id="duS-ex-hFD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ySx-Jc-9Jt">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pva-VR-Rw7">
+                                <rect key="frame" x="15" y="72" width="293" height="248"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zh2-w4-rjo">
+                                <rect key="frame" x="20" y="382" width="32" height="32"/>
+                                <state key="normal" image="pause"/>
+                                <connections>
+                                    <action selector="playPauseButtonAction:" destination="43U-dD-9UU" eventType="touchUpInside" id="2JX-T3-De8"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" minimumValueImage="vol11" maximumValueImage="vol22" translatesAutoresizingMaskIntoConstraints="NO" id="50n-Te-DvE">
+                                <rect key="frame" x="12" y="430" width="297" height="31"/>
+                                <connections>
+                                    <action selector="volumeSliderAction:" destination="43U-dD-9UU" eventType="valueChanged" id="3wa-Zq-9se"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nhx-Px-G41">
+                                <rect key="frame" x="1" y="328" width="320" height="48"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="12"/>
+                                <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KLM-ca-6nl">
+                                <rect key="frame" x="60" y="387" width="26" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                                <color key="textColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="KhS-VM-3ZS">
+                                <rect key="frame" x="83" y="384" width="190" height="31"/>
+                                <color key="minimumTrackTintColor" red="0.15294118225574493" green="0.050980396568775177" blue="0.047058828175067902" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="maximumTrackTintColor" red="0.91764712333679199" green="0.81960791349411011" blue="0.81176477670669556" alpha="1" colorSpace="deviceRGB"/>
+                                <connections>
+                                    <action selector="songPositionSliderAction:" destination="43U-dD-9UU" eventType="valueChanged" id="mG0-ZL-c0y"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uE2-b1-WC5">
+                                <rect key="frame" x="279" y="389" width="33" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                                <color key="textColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="playPauseButton" destination="Zh2-w4-rjo" id="Ocd-Pp-Lnm"/>
+                        <outlet property="songImage" destination="Pva-VR-Rw7" id="D5I-eI-eDP"/>
+                        <outlet property="songPosition" destination="KhS-VM-3ZS" id="VrZ-EC-Z0r"/>
+                        <outlet property="songTitle" destination="Nhx-Px-G41" id="XaJ-Cd-Wxq"/>
+                        <outlet property="timeElapsed" destination="KLM-ca-6nl" id="Ehp-x0-25e"/>
+                        <outlet property="timeRemaining" destination="uE2-b1-WC5" id="a3d-W9-rsd"/>
+                        <outlet property="volumeSlider" destination="50n-Te-DvE" id="Lqs-3R-Fao"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="62c-eM-6va" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1876" y="99"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="7DC-h5-jr4">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9CF-Sd-ckX" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" backIndicatorImage="Default-Portrait" backIndicatorTransitionMaskImage="Default-Portrait" id="5RW-SM-7I0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="gGr-c2-T0I" kind="relationship" relationship="rootViewController" id="nQi-Aw-33e"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k11-J2-lgM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="689" y="342"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Default-Portrait" width="768" height="1024"/>
+        <image name="pause" width="32" height="32"/>
+        <image name="vol11" width="32" height="32"/>
+        <image name="vol22" width="32" height="32"/>
+    </resources>
+</document>
