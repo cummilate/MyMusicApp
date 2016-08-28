@@ -8,9 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import <MediaAccessibility/MediaAccessibility.h>
+#import "MediaPlayerController.h"
 @import MediaPlayer;
-@interface CollectionViewController : UICollectionViewController
+
+@interface SongViewController : UICollectionViewController
 {
-    NSMutableArray<MPMediaItem *> *musicFiles;
+    NSArray<MPMediaItem *> *musicFiles;
+    
 }
+@property(nonatomic) MPMediaItemCollection *mediaItemCollection;
 @end

@@ -6,16 +6,16 @@
 //  Copyright © 2016 PeersTech. All rights reserved.
 //
 
-#import "CollectionViewController.h"
+#import "SongViewController.h"
 #import <MediaAccessibility/MediaAccessibility.h>
-#import "DetailViewController.h"
+
 
 @import MediaPlayer;
-@interface CollectionViewController ()
+@interface SongViewController ()
 
 @end
 
-@implementation CollectionViewController
+@implementation SongViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -28,32 +28,18 @@
 
 - (void)viewDidLoad
 {
-//    musicFiles=[[NSArray alloc]initWithObjects:@"1.jpeg",@"2.jpeg",@"3.jpeg",@"4.jpeg", @"1.jpeg",@"2.jpeg",@"3.jpeg",@"4.jpeg",@"1.jpeg",@"2.jpeg",@"3.jpeg",@"4.jpeg",@"1.jpeg",@"2.jpeg",@"3.jpeg",@"4.jpeg",@"1.jpeg",@"2.jpeg",@"3.jpeg",@"4.jpeg",@"1.jpeg",@"2.jpeg",@"3.jpeg",@"4.jpeg",@"1.jpeg",@"2.jpeg",@"3.jpeg",@"4.jpeg",@"1.jpeg",@"2.jpeg",@"3.jpeg",@"4.jpeg",@"1.jpeg",@"2.jpeg",@"3.jpeg",@"4.jpeg",nil];
-//
-    NSLog(@"Loading Files ======");
+
+    [super viewDidLoad];
+    // Do any additional setup after loading the view.
+    NSLog(@"Loading Album Files ======");
     
-    musicFiles=[[NSMutableArray<MPMediaItem *> alloc]init];
     
-    NSString *bundlePath = [[NSBundle mainBundle] resourcePath];
-    NSFileManager *filemgr = [[NSFileManager alloc] init];
+   /* musicFiles=[[NSMutableArray<MPMediaItem *> alloc]init];
     
-    NSArray *allFiles = [filemgr contentsOfDirectoryAtPath:bundlePath error:NULL];
-    for (NSString *fileName in allFiles)
-    {
-        if ([[fileName pathExtension] isEqualToString:@"mp3"])
-        {
-            NSString *fullFilePath = [bundlePath stringByAppendingPathComponent:fileName];
-            //do whatever you want to do with the path
-           // [musicFiles addObject:song];
-            NSLog(@"Got File -> %@", fullFilePath);
-        }
-    }
     
     
     MPMediaQuery *fullList = [MPMediaQuery songsQuery];
-    //MPMediaQuery *fullList = [[MPMediaQuery alloc]init];
-    //::.. lets go ..::
-   
+    
     NSArray *mediaList = [fullList items];
     int count = 0;
     for (MPMediaItem *song in mediaList) {
@@ -63,13 +49,18 @@
         [musicFiles addObject:song];
         NSLog (@"%d. %@ \"%@\"", count, songArtist, songTitle);
     }
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    */
+   
+    musicFiles = [_mediaItemCollection items];
+    
+    
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     
     return musicFiles.count;
+   // return _mediaItemCollection.count;
+
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
@@ -83,8 +74,18 @@
     
     MPMediaItemArtwork *artwork = [musicFile valueForKey:MPMediaItemPropertyArtwork];
     
-    UIImage *image = [artwork imageWithSize:artwork.bounds.size];
-    imgView.image = image;
+    UIImage *albumArtworkImage = nil;
+    
+    if (artwork != nil) {
+        albumArtworkImage = [artwork imageWithSize:artwork.bounds.size];
+    }
+    
+    if (albumArtworkImage == nil) {
+        albumArtworkImage = [UIImage imageNamed:@"defaultAlbumArtwork"];
+    } else { // no album artwork
+        NSLog(@"No ALBUM ARTWORK");
+    }
+    imgView.image = albumArtworkImage;
    // imgView.image = [UIImage imageNamed:@"music"];
     
     UILabel *name = (UILabel *)[cell viewWithTag:101];
@@ -98,13 +99,14 @@
 {
     return YES;
 }
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     
     if ([[segue identifier] isEqualToString:@"showDetail"]) {
         NSIndexPath *indexPath = self.collectionView.indexPathsForSelectedItems.firstObject;
     
        
-        DetailViewController *controller = [segue destinationViewController];//(DetailViewController *)[[segue destinationViewController] topViewController];
+        MediaPlayerController *controller = [segue destinationViewController];//(DetailViewController *)[[segue destinationViewController] topViewController];
        controller.musicFile   = [musicFiles objectAtIndex:indexPath.row];
        // controller.navigationItem.leftBarButtonItem = self.splitViewController.displayModeButtonItem;
        // controller.navigationItem.leftItemsSupplementBackButton = YES;

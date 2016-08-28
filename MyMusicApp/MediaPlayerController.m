@@ -6,13 +6,13 @@
 //  Copyright © 2016 PeersTech. All rights reserved.
 //
 
-#import "DetailViewController.h"
+#import "MediaPlayerController.h"
 
-@interface DetailViewController ()
+@interface MediaPlayerController ()
 
 @end
 
-@implementation DetailViewController
+@implementation MediaPlayerController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -21,14 +21,22 @@
     NSURL *url = [_musicFile valueForProperty:MPMediaItemPropertyAssetURL];
 
     
-    
-    
     MPMediaItemArtwork *artwork = [_musicFile valueForKey:MPMediaItemPropertyArtwork];
+    UIImage *albumArtworkImage = nil;
     
-    UIImage *image = [artwork imageWithSize:artwork.bounds.size];
+    if (artwork != nil) {
+        albumArtworkImage = [artwork imageWithSize:artwork.bounds.size];
+    }
     
+    if (albumArtworkImage == nil) {
+         albumArtworkImage = [UIImage imageNamed:@"defaultSongArtwork"];
+    } else { // no album artwork
+        NSLog(@"No ALBUM ARTWORK");
+       
+    }
     
-    _songImage.image = image;
+    _songImage.image = albumArtworkImage;
+    
     _songTitle.text = [_musicFile valueForKey:MPMediaItemPropertyTitle];
    
     NSLog(@"PlayBack time %@", [_musicFile valueForKey:MPMediaItemPropertyPlaybackDuration]);
@@ -70,7 +78,7 @@
 */
 
 - (IBAction)volumeSliderAction:(id)sender {
-    NSLog(@"Volume slider value %f",_volumeSlider.value);
+   // NSLog(@"Volume slider value %f",_volumeSlider.value);
      audioPlayer.volume=_volumeSlider.value/1.0;
 }
 

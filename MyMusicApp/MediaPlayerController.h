@@ -11,7 +11,7 @@
 #import <MediaAccessibility/MediaAccessibility.h>
 @import MediaPlayer;
 
-@interface DetailViewController : UIViewController
+@interface MediaPlayerController : UIViewController
 {
     AVAudioPlayer *audioPlayer;
     NSTimer *timer;
