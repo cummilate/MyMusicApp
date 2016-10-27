@@ -1,0 +1,34 @@
+
+        if(CollectionUtils.isEmpty(userAssignedFacilities))
+        {
+            return userAssignedFacilities;
+        }
+        
+        List<FacilityDetails> facilities = new ArrayList<FacilityDetails>();
+       
+        Map<Long, Integer> facilityMap = new HashMap<Long, Integer>();
+       
+        int index = 0;
+        for (FacilityDetails facility : userAssignedFacilities)
+        {
+            if(facility.isParent())
+            {
+                facilities.add(facility);
+                facilityMap.put(facility.getFacilityId(), index++);
+            }
+            
+        }
+        for (FacilityDetails facility : userAssignedFacilities)
+        {
+            if(facility.isChild())
+            {
+                int parentFacilityIndex = facilityMap.get(facility.getParentFacilityId());
+                facilities.add(parentFacilityIndex + 1, facility);
+                
+            }
+            
+        }
+        
+                
+        return facilities;
+    }
