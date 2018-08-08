@@ -1,0 +1,9 @@
+
+Subject: RE: Regarding our discussion on “Learning Architecture”. 
+ 
+Step 1: understand design principles  , refer https://www.oodesign.com/design-principles.html 
+Step 2: Learn and understand design patterns  by Gang of Four (GoF) – Eric , Gamma, etc
+Step 3: Read through the book “Pattern Oriented Software Architecture- 1: A System of Patterns” . This is a must read for architects. 
+Step 4:  Use the above to develop architecture. See attached template to document software architecture 
+ 
+
