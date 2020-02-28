@@ -1,3 +1,4 @@
 
 Classloader - https://www.journaldev.com/349/java-classloader
 https://media.geeksforgeeks.org/wp-content/uploads/jvmclassloader.jpg
+https://spring.io/guides/gs/rest-service/
