@@ -2,3 +2,5 @@
 Classloader - https://www.journaldev.com/349/java-classloader
 https://media.geeksforgeeks.org/wp-content/uploads/jvmclassloader.jpg
 https://spring.io/guides/gs/rest-service/
+https://stackoverflow.com/questions/52681002/angular-onclick-on-html-element-according-to-its-class
+https://stackblitz.com/edit/angular-get-el-by-class-name?file=src%2Fapp%2Fapp.component.ts
