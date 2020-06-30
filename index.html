@@ -12,9 +12,14 @@
         .border {
             border: 2px solid;
         }
-
+	
+	.header1{
+            height: 10%;
+        }
         .toolbar {
-            height: 30%;
+            height: 20%;
+	    width: 85%;
+	    text-align: center
         }
         .content {
             height: 70%;
@@ -30,10 +35,21 @@
         }
 
         .search-control {
-            border: 1px solid;
             width: 10%;
             display: inline-block;
         }
+
+	.label{
+	   background-color:orange
+	    height: 50%;
+            display: inline-block;		
+	}
+	
+	.control{
+	   
+	    height: 50%;
+            display: inline-block;		
+	}
     </style>
     <script>
 
@@ -42,78 +58,114 @@
 
 <body>
 <div class="container">
+    <div class="header1">
+<field>
+<u>
+<h1 style="color:MediumSeaGreen;">Cap plan @Smartops: 
+ <span style="color:DodgerBlue;">FTE break-up & Shrinkage Data Input - Module1</span></h1>
+</u>
+</field>
+</div>
     <div class="toolbar border burlywood">
         <div class="search-control">
-            <div class=""label>
-                Company
+            <div class="label">
+                Business Function
             </div>
         <div class="control">
-            <select>
-                <option>NAme</option>
-                <option>Company</option>
-            </select>
+            	<field>UWS
+          </field>
         </div>
         </div>
 
         <div class="search-control">
-            <div class=""label>
-                Company
+            <div class="label">
+                Country
             </div>
             <div class="control">
                 <select>
-                    <option>NAme</option>
-                    <option>Company</option>
+                    <option>India</option>
+                    <option>United Kingdom</option>
                 </select>
             </div>
         </div>
 
 
         <div class="search-control">
-            <div class=""label>
-                Company
+            <div class="label">
+                Product
             </div>
             <div class="control">
                 <select>
-                    <option>NAme</option>
-                    <option>Company</option>
+                    <option>FD</option>
+                    <option>Loans</option>
                 </select>
             </div>
         </div>
 
 
         <div class="search-control">
-            <div class=""label>
-                Company
+            <div class="label">
+                Site
             </div>
             <div class="control">
                 <select>
-                    <option>NAme</option>
-                    <option>Company</option>
+                    <option>Hyderabad</option>
+                    <option>Vizag</option>
                 </select>
             </div>
         </div>
 
         <div class="search-control">
-            <div class=""label>
-                Company
+            <div class="label">
+                Month
             </div>
             <div class="control">
-                <select>
-                    <option>NAme</option>
-                    <option>Company</option>
-                </select>
+                <input>
             </div>
         </div>
 
         <div class="search-control">
-            <div class=""label>
-                Company
+            <div class="label">
+                Week days
             </div>
             <div class="control">
-                <select>
-                    <option>NAme</option>
-                    <option>Company</option>
-                </select>
+                <input>
+            </div>
+        </div>
+
+	<div class="search-control">
+            <div class="label">
+                Bank Holiday
+            </div>
+            <div class="control">
+                <input>
+            </div>
+        </div>
+
+        <div class="search-control">
+            <div class="label">
+                Contracted Hours
+            </div>
+            <div class="control">
+                <input>
+            </div>
+        </div>
+
+	<div class="search-control">
+            <div class="label">
+                MAR Count
+            </div>
+            <div class="control">
+                <input>
+            </div>
+        </div>
+
+	<div class="search-control">
+            <div class="label">
+                Date Of Holiday(If Applicable)
+            </div>
+            <div class="control">
+                <input>
             </div>
         </div>
 
